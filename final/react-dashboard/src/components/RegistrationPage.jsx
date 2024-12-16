@@ -26,7 +26,7 @@ function RegistrationPage() {
 
     setIsLoading(true); // Show loader
     try {
-      const dataResponse = await fetch("http://localhost:5000/api/signup", {
+      const dataResponse = await fetch("https://ott-backend-1-server.onrender.com", {
         method: 'POST',
         headers: {
           "content-type": "application/json",
