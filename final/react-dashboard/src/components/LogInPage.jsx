@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import '../styles/LoginPage.css';
+import '../styles/LogInPage.css';
 import Cookies from "js-cookie";
 
 function LoginPage() {
