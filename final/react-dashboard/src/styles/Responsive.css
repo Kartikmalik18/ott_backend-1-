@@ -1,0 +1,26 @@
+/* Layout adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .login-container, .register-container, .dashboard-container, .settings-container {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .widget {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    table {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  
+    .widget-container {
+      flex-direction: column;
+    }
+  }
+  

@@ -1,0 +1,176 @@
+/* Navigation Bar Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4CAF50;
+  padding: 10px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+nav button {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+nav button:hover {
+  color: black;
+  background-color: aqua;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #2f2f2f;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.sidebar a:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.sidebar.collapsed a {
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  /* Adjust Sidebar for Smaller Desktops */
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar.collapsed {
+    width: 50px;
+  }
+
+  nav {
+    padding: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Hide Sidebar on Tablets */
+  .sidebar {
+    display: none;
+  }
+
+  .sidebar.open {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  /* Show Hamburger Menu */
+  .hamburger {
+    display: block;
+  }
+
+  nav button {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Mobile Navigation Adjustments */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 5px;
+  }
+
+  nav button {
+    font-size: 0.8rem;
+    margin: 5px 0;
+  }
+
+  /* Mobile Sidebar */
+  .sidebar {
+    display: none;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2f2f2f;
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .hamburger div {
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+  }
+
+  .sidebar a {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+/* Utility Classes for Visibility */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}

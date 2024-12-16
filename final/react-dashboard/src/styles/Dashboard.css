@@ -1,0 +1,313 @@
+/* General Utility Classes */
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.flex1 {
+  display: flex;
+  gap: 30px;
+}
+
+.aqua {
+  background-color: aqua;
+  font-size: 20px;
+}
+
+.cp {
+  font-weight: bolder;
+}
+
+.col {
+  color: #555;
+  font-size: larger;
+}
+
+.time {
+  background-color: aqua;
+  border: 2px solid aqua;
+  border-radius: 10px;
+  width: 100px;
+  padding-left: 15px;
+}
+
+/* Profile Section */
+.left {
+  background-color:aqua;
+  border: 2px solid aqua;
+  border-radius: 30px;
+  width: 400px;
+  height: 420px;
+}
+
+.profile {
+  padding-left: 20px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 70px;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Deadlines Section */
+.deadlines {
+  padding-top: 20px;
+  height: auto;
+
+  
+}
+
+.section {
+  background-color:yellow;
+  border: 2px solid yellow;
+  border-radius: 30px;
+  width: 360px;
+  height: 190px;
+}
+
+.title {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.deadlines{
+  padding-left: 15px;
+  color: #555;
+  padding-top: 20px;
+}
+
+/* Skills Section */
+.skills-section {
+  background-color: beige;
+  border: 2px solid beige;
+  border-radius: 30px;
+  width: 380px;
+  padding: 20px;
+}
+
+.skill-set {
+  margin-top: 20px;
+}
+
+.skills {
+  padding-top: 20px;
+  border-radius: 20px;
+  width: 350px;
+  height: auto;
+}
+
+/* Padding and Spacing */
+.pad {
+  padding-top: 20px;
+  padding-left: 35px;
+  width: 350px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.tn {
+  background-color: aqua;
+  border-radius: 20px;
+  font-weight: bolder;
+  width: 100px;
+  padding-left: 5px;
+}
+
+.sec {
+  border-radius: 20px;
+  height: 150px;
+  width: 350px;
+  border: 2px solid white;
+}
+
+.sec1 {
+  padding-top: 20px;
+}
+
+.tf {
+  padding-left: 25px;
+}
+/* Certification Card Styling */
+.certification-card {
+  background-color: chartreuse;
+  border: 2px solid chartreuse;
+  border-radius: 20px;
+  width: 400px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pad3 {
+  padding-left: 140px;
+}
+
+.cert-title {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cert-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cert-name {
+  font-size: 18px;
+  color: #222;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.cert-issuer {
+  font-size: 14px;
+  color: #555;
+}
+
+.cert-expertise {
+  font-size: 14px;
+  color: #007acc;
+  font-weight: bold;
+}
+.colo{
+  color: black;
+}
+
+.cert-item:hover {
+  background-color: #eaf4ff;
+  border-color: #007acc;
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Skills Card Styling */
+.skills-card {
+  background: linear-gradient(135deg, #007acc, #00d4ff);
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skills-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.skills-list {
+  padding: 15px;
+}
+
+.skill-item {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.skill-item:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #007acc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.left:hover,
+.section:hover,
+.skills-section:hover,
+.certification-card:hover {
+  border: 3px solid purple;
+  background-color: aquamarine;
+  transition: 0.2s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .flex, .flex1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .left, .section, .skills-section, .certification-card {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .left, .section, .skills-section, .certification-card {
+    width: 90%;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .pad, .skills, .sec {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .flex, .flex1 {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .left, .section, .skills-section, .certification-card {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .profile-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .cert-title, .skills-title {
+    font-size: 20px;
+  }
+
+  .cert-item, .skill-item {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .pad3 {
+    padding-left: 10px;
+  }
+}

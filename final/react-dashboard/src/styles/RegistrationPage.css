@@ -1,0 +1,177 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    background-color: #f0f0f5;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  /* Registration Container */
+  .register-container {
+    width: 100%;
+    max-width: 450px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .register-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Registration Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  form h2:hover {
+    color: #007bff;
+  }
+  
+  /* Form Inputs */
+  form div {
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Focus Animation */
+  form input:focus::placeholder {
+    color: transparent;
+  }
+  
+  /* Button Styling */
+  form button {
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  form button:active {
+    transform: translateY(1px);
+  }
+  
+  form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #d9534f;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 15px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .error-message.show {
+    opacity: 1;
+  }
+  
+  .error-message.hide {
+    opacity: 0;
+  }
+  
+  /* Subtle Animation for Error Message */
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .error-message {
+    animation: slideIn 0.5s ease-out forwards;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 480px) {
+    .register-container {
+      padding: 30px;
+      width: 90%;
+    }
+  
+    form h2 {
+      font-size: 1.6rem;
+    }
+  
+    form input {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  
+    form button {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  }
+  

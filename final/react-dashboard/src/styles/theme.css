@@ -1,0 +1,59 @@
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  
+  .dark-mode button {
+    background-color: #6200ea;
+    color: white;
+  }
+  
+  .dark-mode button:hover {
+    background-color: #3700b3;
+  }
+  
+  .dark-mode .widget {
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  .dark-mode table th,
+  .dark-mode table td {
+    border: 1px solid #333;
+  }
+  
+  .dark-mode table th {
+    background-color: #333;
+  }
+  
+  /* Light Mode Styles */
+  .light-mode {
+    background-color: white;
+    color: black;
+  }
+  
+  .light-mode button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .light-mode button:hover {
+    background-color: #45a049;
+  }
+  
+  .light-mode .widget {
+    background-color: #fff;
+    color: black;
+  }
+  
+  .light-mode table th,
+  .light-mode table td {
+    border: 1px solid #ddd;
+  }
+  
+  .light-mode table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
