@@ -26,7 +26,7 @@ function LoginPage() {
     setIsLoading(true); // Show loader while awaiting API response
 
     try {
-        const dataResponse = await fetch("http://localhost:5000/api/signin", {
+        const dataResponse = await fetch("https://ott-backend-1-server.onrender.com", {
             method:"POST",
             credentials: 'include',
             headers: {
